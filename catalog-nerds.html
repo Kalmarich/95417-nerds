@@ -6,105 +6,132 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-      <header>
+      <header class="main-header">
         <div class="container">
-            <a href="index.html"><img src="image/logo" alt="nёrds"></a>
-                <nav class="main-navigation">
-                    <ul>
-                        <li>
-                            <a href="#">Студия</a>
-                        </li>
-                        <li>
-                            <a href="#">Клиенты</a>
-                        </li>
-                        <li>
-                            <a href="#">Магазин</a>
-                        </li>
-                        <li>
-                            <a href="#">Контакты</a>
-                        </li>
-                        <li>
-                            <a href="#">Контакты</a>
-                        </li>
-                    </ul>
-                </nav>
+            <div class="logo">
+                <a href="index.html"><img src="image/logo" alt="nёrds"></a>
+            </div>
+            <nav class="main-navigation">
+                <ul>
+                    <li>
+                        <a href="#">Студия</a>
+                    </li>
+                    <li>
+                        <a href="#">Клиенты</a>
+                    </li>
+                    <li>
+                        <a href="#">Магазин</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
                 <div class="basket-block">
                     <a class="basket" href="#">Корзина</a>
                 </div>
-              </div>
+        </div>
       </header>
-      <main>
-        <h1>
-            Добро пожаловать в магазин
-            <br>
-            готовых макетов
-        </h1>
-        <div class="products-filters">
-            <form action="#" method="get"></form>
-            <h2>Стоимость</h2>
-            <!-- ползунок пока не осилил -->
-            <h2>Сетка:</h2>            
-            <select name="grid" size="3" multiple>
-                <option selected>Адаптивная</option>
-                <option>Фиксированная</option>
-                <option>Резиновая</option>              
-            </select>               
-            <h2>Особенности:</h2>
-            <select name="features" size="5" multiple>
-                <option selected>Слайдер</option>
-                <option>Блок преимуществ</option>
-                <option selected>Новости</option>
-                <option>Галерея</option>
-                <option>Корзина</option>
-            </select>
-            <br>
-            <a class="btn filter" href="#">ПОКАЗАТЬ</a>
-        </div>
-        <div class="sorting">
-        <!--Вот тут думаю, что тоже все не так сделал в плане сортировки-->
-            Сортировать:
-            <a href="#" class="sort">по цене</a>
-            <a href="#" class="sort">по типу</a>
-            <a href="#" class="sort">по функционалу</a>
-            <a href="#" class="btn next"><img src="#" alt="далее"></a>
-            <a href="#" class="btn prev"><img src="#" alt="назад"></a>
-        </div>        
-        <div class="products-catalog">
-            <div class="products">
-                <a href="#"><img src="#" alt="Aviator"></a>                        
+      <main class="container content">
+          <div class="main-block">
+            <h1>
+                Добро пожаловать в магазин
+                <br>
+                готовых макетов
+            </h1>
+            <div class="products-filters">
+                <form action="#" method="get"></form>
+                <div class="price">
+                    <h2>Стоимость</h2>
+                    <!-- ползунок пока не осилил -->
+                </div>
+                <div class="grid-filters">
+                    <h2>Сетка:</h2>            
+                    <p class="products-grid">
+                        <label>
+                            <input type="radio" name="grid" value="adaptive"> Адаптивная <br>
+                        </label>
+                        <label>
+                            <input type="radio" name="grid" value="fixed"> Резиновая <br>
+                        </label>
+                        <label>
+                            <input type="radio" name="grid" value="rubber"> Резиновая <br>
+                        </label>
+                    </p>          
+                </div>
+                <div class="features-filters">
+                    <h2>Особенности:</h2>
+                    <p class="products-features">
+                        <label>
+                            <input type="checkbox" name="features-1" value="slider"> Слайдер <br>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="features-2" value="advantages-block"> Блок преимуществ <br>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="features-3" value="news"> Новости <br>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="features-4" value="gallery"> Галерея <br>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="features-5" value="basket"> Корзина <br>
+                        </label>
+                    </p>
+                </div>
+                <div class="show">
+                    <input type="submit" value="Показать">
+                </div>
             </div>
-            <div class="products">
-                <a href="#"><img src="#" alt="Sunset"></a>     
+            <div class="sorting">
+            <!--Вот тут думаю, что все не так сделал в плане сортировки-->
+                Сортировать:
+                <a href="#" class="sort">по цене</a>
+                <a href="#" class="sort">по типу</a>
+                <a href="#" class="sort">по функционалу</a>
+                <a href="#" class="btn next"><img src="#" alt="далее"></a>
+                <a href="#" class="btn prev"><img src="#" alt="назад"></a>
+            </div>        
+            <div class="products-catalog">
+                <div class="products">
+                    <a class="products-img" href="#"><img src="#" alt="Aviator"></a>                        
+                </div>
+                <div class="products">
+                    <a class="products-img" href="#"><img src="#" alt="Sunset"></a>     
+                </div>
+                <div class="products">
+                    <a class="products-img" href="#"><img src="#" alt="Forte"></a>                        
+                </div>
+                <div class="products">
+                    <a class="products-img" href="#"><img src="#" alt="Modern organic thai"></a>
+                </div>
+                <div class="products">
+                    <a class="products-img" href="#"><img src="#" alt="Avenue"></a>
+                </div>
+                <div class="products">
+                    <a class="products-img" href="#"><img src="#" alt="Dovetail"></a>
+                </div>
             </div>
-            <div class="products">
-                <a href="#"><img src="#" alt="Forte"></a>                        
-            </div>
-            <div class="products">
-                <a href="#"><img src="#" alt="Modern organic thai"></a>
-            </div>
-            <div class="products">
-                <a href="#"><img src="#" alt="Avenue"></a>
-            </div>
-            <div class="products">
-                <a href="#"><img src="#" alt="Dovetail"></a>
-            </div>
-        </div>
-        <nav class="products-navigation">
-            <ul>
-                <li>
-                    1
-                </li>
-                <li>
-                    <a href="#">2</a>
-                </li>
-                <li>
-                    <a href="#">3</a>
-                </li>
-                <li>
-                    <a href="#">Следующая</a>
-                </li>
-            </ul>
-        </nav>
+            <nav class="products-navigation">
+                <ul>
+                    <li>
+                        <span class="active">1</span>
+                    </li>
+                    <li>
+                        <a href="#">2</a>
+                    </li>
+                    <li>
+                        <a href="#">3</a>
+                    </li>
+                    <li>
+                        <a href="#">Следующая</a>
+                    </li>
+                </ul>
+            </nav>
+          </div>
       </main>
       <footer>
         <div class="container">
