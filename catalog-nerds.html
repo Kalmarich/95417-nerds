@@ -50,37 +50,37 @@
                 </div>
                 <div class="grid-filters">
                     <h2>Сетка:</h2>            
-                    <p class="products-grid">
+                    <div class="products-grid">
                         <label>
-                            <input type="radio" name="grid" value="adaptive"> Адаптивная <br>
+                            <input class="filter-radio" type="radio" name="grid" value="adaptive"> Адаптивная <br>
                         </label>
                         <label>
-                            <input type="radio" name="grid" value="fixed"> Резиновая <br>
+                            <input class="filter-radio" type="radio" name="grid" value="fixed"> Резиновая <br>
                         </label>
                         <label>
-                            <input type="radio" name="grid" value="rubber"> Резиновая <br>
+                            <input class="filter-radio" type="radio" name="grid" value="rubber"> Резиновая <br>
                         </label>
-                    </p>          
+                    </div>          
                 </div>
                 <div class="features-filters">
                     <h2>Особенности:</h2>
-                    <p class="products-features">
+                    <div class="products-features">
                         <label>
-                            <input type="checkbox" name="features-1" value="slider"> Слайдер <br>
+                            <input class="filter-checkbox" type="checkbox" name="features" value="slider"> Слайдер <br>
                         </label>
                         <label>
-                            <input type="checkbox" name="features-2" value="advantages-block"> Блок преимуществ <br>
+                            <input class="filter-checkbox" type="checkbox" name="features" value="advantages-block"> Блок преимуществ <br>
                         </label>
                         <label>
-                            <input type="checkbox" name="features-3" value="news"> Новости <br>
+                            <input class="filter-checkbox" type="checkbox" name="features" value="news"> Новости <br>
                         </label>
                         <label>
-                            <input type="checkbox" name="features-4" value="gallery"> Галерея <br>
+                            <input class="filter-checkbox" type="checkbox" name="features" value="gallery"> Галерея <br>
                         </label>
                         <label>
-                            <input type="checkbox" name="features-5" value="basket"> Корзина <br>
+                            <input class="filter-checkbox" type="checkbox" name="features" value="basket"> Корзина <br>
                         </label>
-                    </p>
+                    </div>
                 </div>
                 <div class="show">
                     <input type="submit" value="Показать">
@@ -88,12 +88,18 @@
             </div>
             <div class="sorting">
             <!--Вот тут думаю, что все не так сделал в плане сортировки-->
-                Сортировать:
-                <a href="#" class="sort">по цене</a>
-                <a href="#" class="sort">по типу</a>
-                <a href="#" class="sort">по функционалу</a>
-                <a href="#" class="btn next"><img src="#" alt="далее"></a>
-                <a href="#" class="btn prev"><img src="#" alt="назад"></a>
+                <div class="title">
+                    <span>Сортировать:</span>
+                </div>
+                <div class="sorting-type">
+                    <a href="#" class="sort">по цене</a>
+                    <a href="#" class="sort">по типу</a>
+                    <a href="#" class="sort">по функционалу</a>
+                </div>
+                <div class="sorting-dir">
+                    <a href="#" class="btn next"><img src="#" alt="далее"></a>
+                    <a href="#" class="btn prev"><img src="#" alt="назад"></a>
+                </div>
             </div>        
             <div class="products-catalog">
                 <div class="products">
@@ -147,12 +153,16 @@
                 <a class="btn" href="#">Напишите нам</a>
             </div>
             <div class="footer-social">                    
-                <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-                <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-                <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-                <b>Давайте дружить, это выгодно!</b>
-                <br>
-                <p>Скидка 10% для друзей из социальных сетей</p>
+                <div class="social-icon">
+                    <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+                    <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+                    <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+                </div>    
+                <div class="social-tagline">
+                    <b>Давайте дружить, это выгодно!</b>
+                    <br>
+                    <p>Скидка 10% для друзей из социальных сетей</p>
+                </div>
             </div>
         </div>            
     </footer>
