@@ -43,105 +43,101 @@
                 готовых макетов
             </h1>
             <div class="products-filters">
-                <form action="#" method="get"></form>
-                <div class="price">
+                <form class="filter" action="#" method="get">                    
                     <h2>Стоимость</h2>
-                    <!-- ползунок пока не осилил -->
-                </div>
-                <div class="grid-filters">
-                    <h2>Сетка:</h2>            
-                    <div class="products-grid">
+                    <!-- здесь будет ползунок -->                   
+                    <div class="filter-block">
+                        <h2>Сетка:</h2>
                         <label>
-                            <input class="filter-radio" type="radio" name="grid" value="adaptive"> Адаптивная <br>
+                            <input class="filter-radio" type="radio" name="grid" value="adaptive"> <span>Адаптивная</span>
                         </label>
                         <label>
-                            <input class="filter-radio" type="radio" name="grid" value="fixed"> Резиновая <br>
+                            <input class="filter-radio" type="radio" name="grid" value="fixed"> <span>Резиновая</span>
                         </label>
                         <label>
-                            <input class="filter-radio" type="radio" name="grid" value="rubber"> Резиновая <br>
-                        </label>
-                    </div>          
-                </div>
-                <div class="features-filters">
-                    <h2>Особенности:</h2>
-                    <div class="products-features">
+                            <input class="filter-radio" type="radio" name="grid" value="rubber"> <span>Резиновая</span>
+                        </label>          
+                    </div>
+                    <div class="filter-block">
+                        <h2>Особенности:</h2>                        
                         <label>
-                            <input class="filter-checkbox" type="checkbox" name="features" value="slider"> Слайдер <br>
+                            <input class="filter-checkbox" type="checkbox" name="features" value="slider"> <span>Слайдер</span>
                         </label>
                         <label>
-                            <input class="filter-checkbox" type="checkbox" name="features" value="advantages-block"> Блок преимуществ <br>
+                            <input class="filter-checkbox" type="checkbox" name="features" value="advantages-block"> <span>Блок преимуществ</span>
                         </label>
                         <label>
-                            <input class="filter-checkbox" type="checkbox" name="features" value="news"> Новости <br>
+                            <input class="filter-checkbox" type="checkbox" name="features" value="news"> <span>Новости</span>
                         </label>
                         <label>
-                            <input class="filter-checkbox" type="checkbox" name="features" value="gallery"> Галерея <br>
+                            <input class="filter-checkbox" type="checkbox" name="features" value="gallery"> <span>Галерея</span>
                         </label>
                         <label>
-                            <input class="filter-checkbox" type="checkbox" name="features" value="basket"> Корзина <br>
-                        </label>
+                            <input class="filter-checkbox" type="checkbox" name="features" value="basket"> <span>Корзина</span>
+                        </label>                        
+                    </div>
+                    <input class="btn filter-btn" type="submit" value="ПОКАЗАТЬ">
+                </form>
+            </div>
+            <div class="catalog">
+                <div class="sorting">
+                    <div class="title">
+                        <span>Сортировать:</span>
+                    </div>
+                    <div class="sorting-type">
+                        <a href="#" class="sort">по цене</a>
+                        <a href="#" class="sort">по типу</a>
+                        <a href="#" class="sort">по функционалу</a>
+                    </div>
+                    <div class="sorting-dir">
+                        <a href="#" class="btn next"><img src="#" alt="далее"></a>
+                        <a href="#" class="btn prev"><img src="#" alt="назад"></a>
+                    </div>
+                </div>        
+                <div class="products-list">
+                    <div class="products">
+                        <a class="products-img" href="#"><img src="#" alt="Aviator"><img href="#"></a>                        
+                    </div>
+                    <div class="products">
+                        <a class="products-img" href="#"><img src="#" alt="Sunset"><img href="#"></a>     
+                    </div>
+                    <div class="products">
+                        <a class="products-img" href="#"><img src="#" alt="Forte"><img href="#"></a>                        
+                    </div>
+                    <div class="products">
+                        <a class="products-img" href="#"><img src="#" alt="Modern organic thai"><img href="#"></a>
+                    </div>
+                    <div class="products">
+                        <a class="products-img" href="#"><img src="#" alt="Avenue"><img href="#"></a>
+                    </div>
+                    <div class="products">
+                        <a class="products-img" href="#"><img src="#" alt="Dovetail"><img href="#"></a>
                     </div>
                 </div>
-                <div class="show">
-                    <input type="submit" value="Показать">
-                </div>
-            </div>
-            <div class="sorting">
-            <!--Вот тут думаю, что все не так сделал в плане сортировки-->
-                <div class="title">
-                    <span>Сортировать:</span>
-                </div>
-                <div class="sorting-type">
-                    <a href="#" class="sort">по цене</a>
-                    <a href="#" class="sort">по типу</a>
-                    <a href="#" class="sort">по функционалу</a>
-                </div>
-                <div class="sorting-dir">
-                    <a href="#" class="btn next"><img src="#" alt="далее"></a>
-                    <a href="#" class="btn prev"><img src="#" alt="назад"></a>
-                </div>
-            </div>        
-            <div class="products-catalog">
-                <div class="products">
-                    <a class="products-img" href="#"><img src="#" alt="Aviator"></a>                        
-                </div>
-                <div class="products">
-                    <a class="products-img" href="#"><img src="#" alt="Sunset"></a>     
-                </div>
-                <div class="products">
-                    <a class="products-img" href="#"><img src="#" alt="Forte"></a>                        
-                </div>
-                <div class="products">
-                    <a class="products-img" href="#"><img src="#" alt="Modern organic thai"></a>
-                </div>
-                <div class="products">
-                    <a class="products-img" href="#"><img src="#" alt="Avenue"></a>
-                </div>
-                <div class="products">
-                    <a class="products-img" href="#"><img src="#" alt="Dovetail"></a>
-                </div>
-            </div>
-            <nav class="products-navigation">
-                <ul>
-                    <li>
-                        <span class="active">1</span>
-                    </li>
-                    <li>
-                        <a href="#">2</a>
-                    </li>
-                    <li>
-                        <a href="#">3</a>
-                    </li>
-                    <li>
-                        <a href="#">Следующая</a>
-                    </li>
-                </ul>
-            </nav>
+                <nav class="products-navigation">
+                    <ul>
+                        <li>
+                            <span class="active">1</span>
+                        </li>
+                        <li>
+                            <a href="#">2</a>
+                        </li>
+                        <li>
+                            <a href="#">3</a>
+                        </li>
+                        <li>
+                            <a href="#">Следующая</a>
+                        </li>
+                    </ul>
+                </nav>
+             </div>
           </div>
       </main>
       <footer>
         <div class="container">
+            <div class="footer-map">
             <img src="#" alt="map">
+            </div>
             <div class="contacts">
                 <b>Nёrds design studio</b>
                 <br>
@@ -150,7 +146,7 @@
                 ул. Б.Конюшечная, д. 19/8
                 <br>
                 Телефон: +7 (812) 275-75-75
-                <a class="btn" href="#">Напишите нам</a>
+                <a class="btn btn-red" href="#">Напишите нам</a>
             </div>
             <div class="footer-social">                    
                 <div class="social-icon">
@@ -159,8 +155,7 @@
                     <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
                 </div>    
                 <div class="social-tagline">
-                    <b>Давайте дружить, это выгодно!</b>
-                    <br>
+                    <h2>Давайте дружить, это выгодно!</h2>                 
                     <p>Скидка 10% для друзей из социальных сетей</p>
                 </div>
             </div>
