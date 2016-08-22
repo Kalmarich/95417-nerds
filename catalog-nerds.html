@@ -8,32 +8,32 @@
   <body>
       <header class="main-header">
         <div class="container">
-            <div class="logo">
-                <a href="index.html"><img src="image/logo" alt="nёrds"></a>
-            </div>
-            <nav class="main-navigation">
-                <ul>
-                    <li>
-                        <a href="#">Студия</a>
-                    </li>
-                    <li>
-                        <a href="#">Клиенты</a>
-                    </li>
-                    <li>
-                        <a href="#">Магазин</a>
-                    </li>
-                    <li>
-                        <a href="#">Контакты</a>
-                    </li>
-                    <li>
-                        <a href="#">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
+                <a class="logo">
+                    <img src="img/logo" alt="nёrds">
+                </a>
+                <nav class="main-navigation">
+                    <ul>
+                        <li>
+                            <a href="#">Студия</a>
+                        </li>
+                        <li>
+                            <a href="#">Клиенты</a>
+                        </li>
+                        <li>
+                            <a href="#">Магазин</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
                 <div class="basket-block">
                     <a class="basket" href="#">Корзина</a>
                 </div>
-        </div>
+              </div>
       </header>
       <div class="main-heading">
           <div class="container">
@@ -44,7 +44,11 @@
             <div class="products-filters">
                 <form class="filter" action="#" method="get">                    
                     <h2>Стоимость</h2>
-                    <!-- здесь будет ползунок -->                   
+                    <div class="filter-block">
+                        <input class="filter-range" type="range" min="0" max="15000" step="1" value="15000">
+                        <input class="filter-minprice" type="text" value="0">
+                        <input class="filter-maxprice" type="text" value="15000">
+                    </div>
                     <div class="filter-block">
                         <h2>Сетка:</h2>
                         <label>
@@ -79,23 +83,26 @@
                 </form>
             </div>
             <div class="catalog">
-                <div class="sorting">
-                    <div class="title">
-                        <span>Сортировать:</span>
-                    </div>
+                <div class="sorting">                    
+                    <span class="sorting-title">Сортировать:</span>                   
                     <div class="sorting-type">
                         <a href="#" class="sort">по цене</a>
                         <a href="#" class="sort">по типу</a>
                         <a href="#" class="sort">по функционалу</a>
                     </div>
                     <div class="sorting-dir">
-                        <a href="#" class="btn next"><img src="#" alt="далее"></a>
-                        <a href="#" class="btn prev"><img src="#" alt="назад"></a>
+                        <a href="#" class="up"><img src="#" alt="далее"></a>
+                        <a href="#" class="down"><img src="#" alt="назад"></a>
                     </div>
                 </div>        
                 <div class="products-list">
                     <div class="products">
-                        <a class="products-img" href="#"><img src="#" alt="Aviator"><img href="#"></a>                        
+                        <img src="#" alt="Aviator">
+                        <div class="products-info">
+                            <h3 class="products-title"></h3>
+                            <p></p>
+                            <a href="#" class="btn products-btn"></a>
+                        </div>
                     </div>
                     <div class="products">
                         <a class="products-img" href="#"><img src="#" alt="Sunset"><img href="#"></a>     
@@ -129,36 +136,39 @@
                         </li>
                     </ul>
                 </nav>
-             </div>
-          </div>
+             </div>          
       </main>
       <footer>
-        <div class="container">
-            <div class="footer-map">
-            <img src="#" alt="map">
-            </div>
-            <div class="contacts">
-                <b>Nёrds design studio</b>
-                <br>
-                191186, Санкт-Петербург,
-                <br>
-                ул. Б.Конюшечная, д. 19/8
-                <br>
-                Телефон: +7 (812) 275-75-75
-                <a class="btn btn-red" href="#">Напишите нам</a>
-            </div>
-            <div class="footer-social">                    
-                <div class="social-icon">
-                    <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-                    <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-                    <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-                </div>    
-                <div class="social-tagline">
-                    <h2>Давайте дружить, это выгодно!</h2>                 
-                    <p>Скидка 10% для друзей из социальных сетей</p>
+            <div class="map">
+                <img src="#" alt="map">
+                <div class="container">
+                    <div class="contacts">
+                        <h3>Nёrds design studio</h3>
+                        <p>
+                            191186, Санкт-Петербург,
+                            <br>
+                            ул. Б.Конюшечная, д. 19/8
+                        </p>
+                        <p>
+                            Телефон: +7 (812) 275-75-75
+                        </p>
+                        <a class="btn" href="#">Напишите нам</a>
+                    </div>
                 </div>
-            </div>
-        </div>            
-    </footer>
+            </div>  
+            <div class="footer-social">                    
+               <div class="container"> 
+                    <div class="social-icon">
+                        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+                        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+                        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+                    </div>    
+                    <div class="social-tagline">
+                        <p class="social-title">Давайте дружить, это выгодно!</p>
+                        <p>Скидка 10% для друзей из социальных сетей</p>
+                    </div>
+                </div>  
+            </div>                       
+        </footer>
     </body>
 </html>
