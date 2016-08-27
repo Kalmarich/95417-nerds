@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>
-      <header class="main-header">
-        <div class="container">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML Academy: Нёрдс</title>
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="main-header">
+            <div class="container clearfix">
                 <a class="logo" href="index.html">
-                    <img src="img/logo" alt="nёrds">
+                    <img src="img/logo.png" width="139" height="56" alt="nёrds">
                 </a>
                 <nav class="main-navigation">
                     <ul>
@@ -25,88 +25,87 @@
                         <li>
                             <a href="#">Контакты</a>
                         </li>
-                        <li>
-                            <a href="#">Контакты</a>
-                        </li>
                     </ul>
                 </nav>
                 <div class="basket-block">
                     <a class="basket" href="#">Корзина</a>
                 </div>
-              </div>
-      </header>    
-      <div class="slider">                
-        <input type="radio" id="btn-1" name="toggle" checked>
-        <input type="radio" id="btn-2" name="toggle">
-        <input type="radio" id="btn-3" name="toggle">               
-        <div class="slider-controls">                    
-            <label for="btn-1"></label>
-            <label for="btn-2"></label>
-            <label for="btn-3"></label>                       
-         </div>
-         <div class="slider-inner">
-            <div class="slider-items">
-                <div class slider-img>
-                    <img src="#" alt="Долго, дорого, скрупулезно">                    
+                <div class="clear"></div>
+            </div>
+        </header>    
+        <div class="slider">                
+            <input type="radio" id="btn-1" name="toggle" checked>
+            <input type="radio" id="btn-2" name="toggle">
+            <input type="radio" id="btn-3" name="toggle">               
+            <div class="slider-controls">                    
+                <label for="btn-1"></label>
+                <label for="btn-2"></label>
+                <label for="btn-3"></label>                       
+            </div>
+            <div class="slider-inner">
+                <div class="slider-items">
+                    <div class slider-img>
+                        <img src="#" alt="Долго, дорого, скрупулезно">                    
+                    </div>
+                    <div class="slider-text">
+                        <h3>Долго, дорого, скрупулезно</h3>
+                        <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>          
+                    </div>                     
                 </div>
-                <div class="slider-text">
-                     <h3>Долго, дорого, скрупулезно</h3>
-                     <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>          
-                </div>                     
-             </div>
-             <div class="slider-items">
-                <div class slider-img>
-                    <img src="#" alt="Любите ли вы математику, как любим ее мы?">                    
+                <div class="slider-items">
+                    <div class slider-img>
+                        <img src="#" alt="Любите ли вы математику, как любим ее мы?">                    
+                    </div>
+                    <div class="slider-text">
+                        <h3>Любите ли вы математику, как любим ее мы</h3>
+                        <p>Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать</p>          
+                    </div>                     
                 </div>
-                <div class="slider-text">
-                     <h3>Любите ли вы математику, как любим ее мы</h3>
-                     <p>Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать</p>          
-                </div>                     
-             </div>
-             <div class="slider-items">
-                <div class slider-img>
-                    <img src="#" alt="Только наркотики, только хардкор!">                    
+                <div class="slider-items">
+                    <div class slider-img>
+                        <img src="#" alt="Только наркотики, только хардкор!">                    
+                    </div>
+                    <div class="slider-text">
+                        <h3>Только наркотики, только хардкор!</h3>
+                        <p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>          
+                    </div>                     
                 </div>
-                <div class="slider-text">
-                     <h3>Только наркотики, только хардкор!</h3>
-                     <p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>          
-                </div>                     
-             </div>
+            </div>
         </div>
-      </div>
-      <main class="container content">
+        <main class="container content">
           <div class="main-block">           
-            <div class="directions">
-                <article class="direction">
-                    <a href="#" class="direction-img"><img src="#" alt="веб-сайты"></a>
+            <div class="directions clearfix">
+                <div class="direction">
+                    <a href="#" class="direction-img"><img src="img/direction-web.png" width="240" height="124" alt="веб-сайты"></a>
                     <h2 class="direction-title">Веб-сайты</h2>
                     <p>Мир никогда не будет прежним после того как увидит ваш сайт</p>                   
                     <a class="btn direction-btn" href="#">Заказать</a>
-                </article>
-                <article class="direction">
-                    <a href="#" class="direction-img"><img src="#" alt="приложения"></a>
+                </div>
+                <div class="direction">
+                    <a href="#" class="direction-img"><img src="img/direction-apps.png" width="240" height="124" alt="приложения"></a>
                     <h2 class="direction-title">Приложения</h2>
                     <p>Покорите топ-10 приложений в AppStrore и Google Play</p>
                     <a class="btn direction-btn btn-green" href="#">Заказать</a>                    
-                </article>
-                <article class="direction">
-                    <a href="#" class="direction-img"><img src="#" alt="презентации"></a>                    
+                </div>
+                <div class="direction">
+                    <a href="#" class="direction-img"><img src="img/direction-pstn.png" width="240" height="124" alt="презентации"></a>
                     <h2 class="direction-title">Презентации</h2>
                     <p>Вы даже не подозреваете, насколько вы изумительны!</p>
                     <a class="btn direction-btn btn-yellow" href="#">Заказать</a>                     
-                </article>
+                </div>
               </div>
               <div class="about">
-                <div class="about-block">
+                <div class="about-block clearfix">
                     <div class="about-left">
-                        <h1>Мы - маленькая, но гордая дизайн-студия из Краснодара.</h1>
-                        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
+                        <h1>Мы - маленькая, но гордая<br> дизайн-студия из Краснодара.</h1>
+                        <p>Исповедуем принципы минимализма и чистоты. Ставим математический<br> расчет выше креатива. Работаем не покладая рук, как роботы.</p>
                     </div>
                     <div class="about-right">
-                        <img src="#" alt="nёrd's since 2004">
-                    </div>                    
+                        <img src="img/about-logo.png" width="187" height="75" alt="nёrd's since 2004">
+                        <p>Since 2004</p>
+                    </div>
                 </div>
-                <div class="about-block">
+                <div class="about-block clearfix">
                     <div class="about-left">
                         <h3>Выполняем заказы на разработку:</h3>
                         <ul>
@@ -126,9 +125,9 @@
                 </div>
               </div>
               <div class="clients">                  
-                <img class="clients-img" src="#" alt="glukhanko"> 
-                <img class="clients-img" src="#" alt="html academy">
-                <img class="clients-img" src="#" alt="borodinski">
+                <img class="clients-img" src="img/clients-glukhanko.png" width="198" height="37" alt="glukhanko"> 
+                <img class="clients-img" src="img/clients-htmlacademy.png" width="199" height="68" alt="html academy">
+                <img class="clients-img" src="img/clients-barbershop.png" width="209" height="90" alt="borodinski">
               </div>
           </div>
       </main>
@@ -146,7 +145,7 @@
                         <p>
                             Телефон: +7 (812) 275-75-75
                         </p>
-                        <a class="btn" href="#">Напишите нам</a>
+                        <a class="btn contacts-btn" href="#">Напишите нам</a>
                     </div>
                 </div>
             </div>  
