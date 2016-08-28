@@ -4,12 +4,13 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   </head>
   <body>
       <header class="main-header">
-        <div class="container">
+            <div class="container clearfix">
                 <a class="logo" href="index.html">
-                    <img src="img/logo" alt="nёrds">
+                    <img src="img/logo.png" width="139" height="56" alt="nёrds">
                 </a>
                 <nav class="main-navigation">
                     <ul>
@@ -20,7 +21,7 @@
                             <a href="#">Клиенты</a>
                         </li>
                         <li>
-                            <a href="catalog-nerds.html"><span class="active">Магазин</span></a>
+                            <a href="catalog-nerds.html"><span class="main-navigation-active">Магазин</span></a>
                         </li>
                         <li>
                             <a href="#">Контакты</a>
@@ -30,48 +31,54 @@
                 <div class="basket-block">
                     <a class="basket" href="#">Корзина</a>
                 </div>
-              </div>
-      </header>
-      <div class="main-heading">
+            </div>
+        </header>
+        <div class="main-heading">
           <div class="container">
-              <h1>Добро пожаловать в магазин готовых макетов!</h1>
+              <h1 class="h1-catalog">Добро пожаловать в магазин<br> готовых макетов!</h1>
           </div>
-      </div>
-      <main class="container content">         
+        </div>
+        <main class="container content clearfix">         
             <div class="products-filters">
                 <form class="filter" action="#" method="get">                    
-                    <h2>Стоимость</h2>
+                    <h2 class="filter-h2">Стоимость</h2>
                     <div class="filter-block">
                         <input class="filter-range" type="range" min="0" max="15000" step="1" value="15000">
                         <input class="filter-minprice" type="text" value="0">
                         <input class="filter-maxprice" type="text" value="15000">
                     </div>
                     <div class="filter-block">
-                        <h2>Сетка:</h2>
+                        <h2 class="filter-h2">Сетка:</h2>
                         <label>
                             <input class="filter-radio" type="radio" name="grid" value="adaptive"> <span>Адаптивная</span>
                         </label>
+                        <br>
                         <label>
                             <input class="filter-radio" type="radio" name="grid" value="fixed"> <span>Резиновая</span>
                         </label>
+                        <br>
                         <label>
                             <input class="filter-radio" type="radio" name="grid" value="rubber"> <span>Резиновая</span>
                         </label>          
                     </div>
                     <div class="filter-block">
-                        <h2>Особенности:</h2>                        
+                        <h2 class="filter-h2">Особенности:</h2>                        
                         <label>
                             <input class="filter-checkbox" type="checkbox" name="features" value="slider"> <span>Слайдер</span>
                         </label>
+                        <br>
                         <label>
                             <input class="filter-checkbox" type="checkbox" name="features" value="advantages-block"> <span>Блок преимуществ</span>
                         </label>
+                        <br>
                         <label>
                             <input class="filter-checkbox" type="checkbox" name="features" value="news"> <span>Новости</span>
                         </label>
+                        <br>
                         <label>
                             <input class="filter-checkbox" type="checkbox" name="features" value="gallery"> <span>Галерея</span>
                         </label>
+                        <br>
                         <label>
                             <input class="filter-checkbox" type="checkbox" name="features" value="basket"> <span>Корзина</span>
                         </label>                        
@@ -79,8 +86,8 @@
                     <input class="btn filter-btn" type="submit" value="ПОКАЗАТЬ">
                 </form>
             </div>
-            <div class="catalog">
-                <div class="sorting">                    
+            <div class="catalog clearfix">
+                <div class="sorting clearfix">                    
                     <span class="sorting-title">Сортировать:</span>                   
                     <div class="sorting-type">
                         <a href="#" class="sort">по цене</a>
@@ -92,94 +99,102 @@
                         <a href="#" class="down"><img src="#" alt="назад"></a>
                     </div>
                 </div>        
-                <div class="products-list">
+                <div class="products-list clearfix">
                     <div class="products">
                         <img src="img/products-aviator.jpg" width="240" height="240" alt="Aviator">
+                        <!--
                         <div class="products-info">
                             <h3 class="products-title">Aviator</h3>
                             <p>Одностраничный макет с авторским дизайном</p>
                             <a href="#" class="btn products-btn">8000 р.</a>
                         </div>
+                        -->
                     </div>
                     <div class="products">
                         <img src="img/products-sunset.jpg" width="240" height="240" alt="Sunset">
+                        <!--
                         <div class="products-info">
                             <h3 class="products-title">Sunset</h3>
                             <p>Интернет-магазин с личным кабинетом</p>
                             <a href="#" class="btn products-btn">10000 р.</a>
-                        </div>                             
+                        </div>
+                        -->
                     </div>
                     <div class="products">
                         <img src="img/products-forte.jpg" width="240" height="240" alt="Forte">
+                        <!--
                         <div class="products-info">
                             <h3 class="products-title">Forte</h3>
                             <p>Отличный макет для личного блога</p>
                             <a href="#" class="btn products-btn">5000 р.</a>
-                        </div>                                              
+                        </div>
+                        -->
                     </div>
                     <div class="products">
                         <img src="img/products-modernorganic.jpg" width="240" height="240" alt="Modern organic thai">
+                        <!--
                         <div class="products-info">
                             <h3 class="products-title">Modern organic thai</h3>
                             <p>Сайт для ресторана быстрого питания</p>
                             <a href="#" class="btn products-btn">12000 р.</a>
-                        </div>                        
+                        </div>
+                        -->
                     </div>
                     <div class="products">
                         <img src="img/products-avenue.jpg" width="239" height="240" alt="Avenue">
+                        <!--
                         <div class="products-info">
                             <h3 class="products-title">Avenue</h3>
                             <p>Макет для блога о путешествиях</p>
                             <a href="#" class="btn products-btn">8000 р.</a>
-                        </div>                        
+                        </div>
+                        -->
                     </div>
                     <div class="products">
                         <img src="img/products-dovetail.jpg" width="239" height="240" alt="Dovetail">
+                        <!--
                         <div class="products-info">
                             <h3 class="products-title">Dovetail</h3>
                             <p>Интернет-магазин с галереей товаров</p>
                             <a href="#" class="btn products-btn">14000 р.</a>
-                        </div>                          
+                        </div>
+                        -->
                     </div>
                 </div>
                 <nav class="products-navigation">
                     <ul>
                         <li>
-                            <span class="active">1</span>
+                            <a class="products-navigation-btn" href="#">1</a>
                         </li>
                         <li>
-                            <a href="#">2</a>
+                            <a class="products-navigation-btn" href="#">2</a>
                         </li>
                         <li>
-                            <a href="#">3</a>
+                            <a class="products-navigation-btn" href="#">3</a>
                         </li>
                         <li>
-                            <a href="#">Следующая</a>
+                            <a class="products-navigation-btn products-navigation-next" href="#">Следующая</a>
                         </li>
                     </ul>
                 </nav>
              </div>          
       </main>
       <footer>
-            <div class="map">
-                <img src="#" alt="map">
-                <div class="container">
+            <div class="footer-map">
+                <div class="map">
+                    <img src="img/map.jpg" width="1199" height="416" alt="map">
+                </div>
+                <div class="container clearfix">
                     <div class="contacts">
                         <h3>Nёrds design studio</h3>
-                        <p>
-                            191186, Санкт-Петербург,
-                            <br>
-                            ул. Б.Конюшечная, д. 19/8
-                        </p>
-                        <p>
-                            Телефон: +7 (812) 275-75-75
-                        </p>
-                        <a class="btn" href="#">Напишите нам</a>
+                        <p>191186, Санкт-Петербург,<br> ул. Б.Конюшечная, д. 19/8</p>
+                        <p>Телефон: +7 (812) 275-75-75</p>
+                        <a class="btn contacts-btn" href="#">Напишите нам</a>
                     </div>
                 </div>
             </div>  
             <div class="footer-social">                    
-               <div class="container"> 
+               <div class="container clearfix"> 
                     <div class="social-icon">
                         <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
                         <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
@@ -187,7 +202,7 @@
                     </div>    
                     <div class="social-tagline">
                         <p class="social-title">Давайте дружить, это выгодно!</p>
-                        <p>Скидка 10% для друзей из социальных сетей</p>
+                        <p>Скидка 10% для друзей из социальных сетей.</p>
                     </div>
                 </div>  
             </div>                       
