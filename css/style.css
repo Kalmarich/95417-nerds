@@ -45,7 +45,7 @@ body {
 .main-navigation {
     display: block;
     float: left;
-    width: 400px;
+    border: 1px solid black;
 }
 .main-navigation li {
     display: inline-block;
@@ -168,8 +168,7 @@ direction img {
     padding-right: 55px;
 }
 .footer-map {
-    box-sizing: border-box;
-    width: 1199px;
+    box-sizing: border-box;    
     height: 416px;
     margin-left: auto;
     margin-right: auto;
@@ -177,6 +176,10 @@ direction img {
 }
 .map {
     position: absolute;
+    width: 100%;
+    height: 416px;
+    left: 0;
+    right: 0;
     background-image: url(img/map.jpg) no-repeat;    
 }
 .social-icon {
@@ -205,6 +208,8 @@ direction img {
 .h1-catalog {    
     margin-left: auto;
     margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 40px;
     line-height: normal;
     color: black;
@@ -222,6 +227,9 @@ direction img {
 }
 .filter-block:nth-child(3) {
     margin-bottom: 57px;
+}
+.filter-block label {
+    display: block;
 }
 .filter-h2 {
     margin-bottom: 20px;
@@ -263,6 +271,9 @@ direction img {
 }
 .sorting-dir {
     float: right;
+}
+.products-list {
+    height: 1050px;
 }
 .products {
     margin-bottom: 80px;
