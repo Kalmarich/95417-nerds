@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   </head>
@@ -21,7 +22,7 @@
                             <a href="#">Клиенты</a>
                         </li>
                         <li>
-                            <a href="catalog-nerds.html"><span class="main-navigation-active">Магазин</span></a>
+                            <a class="active" href="catalog-nerds.html">Магазин</a>
                         </li>
                         <li>
                             <a href="#">Контакты</a>
@@ -175,9 +176,7 @@
       </main>
       <footer>
             <div class="footer-map">
-                <div class="map">
-                    <img src="img/map.jpg" width="1199" height="416" alt="map">
-                </div>
+                <div id="map" class="map"></div>
                 <div class="container clearfix">
                     <div class="contacts">
                         <h3>Nёrds design studio</h3>

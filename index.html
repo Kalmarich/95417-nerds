@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Нёрдс</title>
+        <link href="css/normalize.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     </head>
@@ -24,12 +25,12 @@
                             <a href="catalog-nerds.html">Магазин</a>
                         </li>
                         <li>
-                            <a href="#">Контакты</a>
+                            <a class="no-margin" href="#">Контакты</a>
                         </li>
                     </ul>
                 </nav>
                 <div class="basket-block">
-                    <a class="basket" href="#">Корзина</a>
+                    <a class="basket icon-basket" href="#">Корзина</a>
                 </div>
             </div>
         </header>    
@@ -54,8 +55,6 @@
                             <img src="img/slider1.png" width="340" height="310" alt="Долго, дорого, скрупулезно">                    
                         </div>                                             
                     </div>
-                    <!--
-                    
                     <div class="slider-items clearfix">
                         <div class="slider-text">
                             <h3>Любите ли вы математику,<br> как любим ее мы</h3>
@@ -76,8 +75,6 @@
                             <img src="img/slider3.png" width="340" height="310" alt="Только наркотики, только хардкор!">                    
                         </div>                                             
                     </div>
-                    
-                    -->
                 </div>
             </div>
         </div>
@@ -142,9 +139,7 @@
       </main>
           <footer>
             <div class="footer-map">
-                <div class="map">
-                    <img src="img/map.jpg" width="1199" height="416" alt="map">
-                </div>
+                <div id="map" class="map"></div>
                 <div class="container clearfix">
                     <div class="contacts">
                         <h3>Nёrds design studio</h3>
