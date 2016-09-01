@@ -380,11 +380,37 @@ direction img {
     width: 100%;
     height: 416px;
     left: 0;
-    right: 0;
+    right: 0;    
     background-image: url(../img/map.jpg);
     background-repeat: no-repeat;
     background-position: 0 center;
     background-size: cover;
+    z-index: 0;
+}
+.contacts {
+    position: relative;
+    top: 90px;
+    padding-top: 30px;
+    background-color: white;
+    width: 250px;
+    z-index: 1;
+}
+.contacts h3 {
+    margin: 0;
+    margin-bottom: 21px;
+    padding-left: 20px;
+    text-transform: uppercase;
+}
+.contacts p {
+    padding-left: 20px;
+    color: #666666;
+    margin-bottom: 30px;
+}
+.contacts-btn {
+    margin-left: 22px;
+    margin-bottom: 25px;
+    padding-left: 55px;
+    padding-right: 55px;
 }
 .footer-social {
      margin-bottom: 75px;
@@ -671,6 +697,14 @@ input [type="checkbox"] {
     font-weight: normal;
     font-family: "Roboto", "Arial", sans-serif;
 }
+.products-btn:hover {
+    background-color: #d6494d;
+}
+.products-btn:active {
+    background-color: #b63538;
+    padding-top: 8px;
+    border-top: 2px solid #9b2d30;
+}
 .products:hover .products-info {
     display: block;
     top: 20px;
@@ -679,23 +713,40 @@ input [type="checkbox"] {
 .products-navigation ul {
     margin: 0 0 80px 0;
     padding: 0;
+    list-style: none;
+    font-size: 0;
 }
 .products-navigation li {
     display: inline-block;
-    height: 38px;
-    padding: 12px 15px;
-    border: 1px solid #f1f1f1;
+    margin-right: 10px;
+    vertical-align: top;
+    font-size: 16px;
+    line-height: 18px;
+}
+.products-navigation a {
+    display: block;
+    padding: 12px 16px;
+    border: 2px solid #f1f1f1;
     background-color: #f1f1f1;
-    font-size: 12px;
-    line-height: 38px;
     color: black;
     text-transform: uppercase;
+    text-decoration: none;
     font-weight: normal;
-    font-family: "Roboto";
-    text-align: center;
-    vertical-align: middle;
+    font-family: "Roboto", "Arial", sans-serif;
 }
-.products-navigation-active {
-    background-color: #ffffff;
-     border: 1px solid #f2f2f2;
+.products-navigation .active {
+    background-color: white;
+}
+.products-navigation .next {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.products-navigation a:hover {
+    border-color: #e5e5e5;
+    background-color: #e5e5e5;
+}
+.products-navigation a:active {
+    border-color: #d5d5d5;
+    border-top: 2px solid #b5b5b5;
+    background-color: #d5d5d5;
 }
