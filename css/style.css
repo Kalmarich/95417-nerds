@@ -126,7 +126,7 @@ body {
     padding-top: 20px;
     float: right;
 }
-.basket-block a {
+.basket {
     display: block;
     padding-top: 7px;
     padding-bottom: 7px;
@@ -135,6 +135,13 @@ body {
     line-height: 30px;
     text-decoration: none;
     text-transform: uppercase;
+}
+.basket::before {
+    color: #a6a6a6;
+    margin-right: 15px;
+}
+.baskter:hover::before {
+    color: #fb565a;
 }
 .basket-block a:hover {
     color: #fb565a;
@@ -604,6 +611,9 @@ direction img {
     background-color: #f1f1f1;
     color: black;
 }
+.filter-btn:focus {
+    outline: 0;
+}
 .filter-btn:hover {
     background-color: #e5e5e5;
 }
@@ -630,6 +640,7 @@ direction img {
     font-family: "Roboto", "Arial", sans-serif;
 }
 .sorting-type {
+    width: 460px;
     float: left;
 }
 .sorting-type a {
@@ -653,12 +664,22 @@ direction img {
     border-bottom: 0;
 }
 .sorting-dir {
+    width: 100px;
     float: left;
-}
-.sorting-dir a {
-    font-size: 0;
-    color: #c1c1c1;
     text-align: right;
+}
+.dir-a {
+    display: inline-block;
+    vertical-align: middle;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 10px solid #c1c1c1;
+}
+.dir-active {
+    border-bottom-color: #44d899;
+}
+.dir-desk {
+    transform: rotate(180deg);
 }
 .sorting-dir a:active {
     color: black;
