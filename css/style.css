@@ -481,7 +481,7 @@ direction img {
     font-family: "Roboto", "Arial", sans-serif;
 }
 .modal-content {
-    display: none;
+    
     position: absolute;
     width: 630px;
     top: 1590px;
@@ -557,6 +557,7 @@ direction img {
     padding-bottom: 10px;
     padding-left: 13px;    
     border: 2px solid #d7dcde;
+    border-radius: 4px;
 }
 .letter {
     width: 460px;
@@ -565,6 +566,8 @@ direction img {
     box-sizing: border-box;
     padding-top: 10px;
     padding-left: 13px;
+    border: 2px solid #d7dcde;
+    border-radius: 4px;
 }
 .name,
 .email,
@@ -588,6 +591,30 @@ direction img {
 .user-letter-block .btn {
     width: 460px;
     margin-bottom: 50px;
+}
+input::-webkit-input-placeholder {
+    color: #000000;
+    opacity: 1.0;
+}
+input::-moz-placeholder {
+    color: #000000;
+    opacity: 1.0;
+}
+input:-ms-input-placeholder {
+    color: #000000;
+    opacity: 1.0;
+}
+textarea::-webkit-input-placeholder {
+    color: #000000;
+    opacity: 1.0;
+}
+textarea::-moz-placeholder {
+    color: #000000;
+    opacity: 1.0;
+}
+textarea:-ms-input-placeholder {
+    color: #000000;
+    opacity: 1.0;
 }
 /* CATALOG          CATALOG         CATALOG */
 
