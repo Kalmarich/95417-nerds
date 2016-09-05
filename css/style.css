@@ -497,7 +497,7 @@ direction img {
     font-family: "Roboto", "Arial", sans-serif;
 }
 .modal-content {
-    
+    display: none;
     position: absolute;
     width: 630px;
     top: 1590px;
