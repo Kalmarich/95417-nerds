@@ -206,6 +206,14 @@ body {
     padding-left: 70px;
     padding-right: 70px;
 }
+.slider-btn:hover {
+    background-color: #d6494d;
+}
+.slider-btn:active {
+    padding-top: 10px;
+    border-top: 3px solid #9b2d30;
+    background-color: #b63538;
+}
 .slider-img {
     float: right;
     padding-top: 52px;        
@@ -426,6 +434,14 @@ direction img {
     padding-left: 55px;
     padding-right: 55px;
 }
+.contacts-btn:hover {
+    background-color: #d6494d;
+}
+.contacts-btn:active {
+    padding-top: 10px;
+    border-top: 3px solid #9b2d30;
+    background-color: #b63538;
+}
 .footer-social {
      margin-bottom: 40px;
 }
@@ -591,6 +607,17 @@ direction img {
 .user-letter-block .btn {
     width: 460px;
     margin-bottom: 50px;
+}
+.user-letter-block .btn:hover {
+    background-color: #d6494d;
+}
+.user-letter-block .btn:active {
+    padding-top: 10px;
+    border-top: 3px solid #9b2d30;
+    background-color: #b63538;
+}
+.user-letter-block .btn:focus {
+    outline: 0;
 }
 input::-webkit-input-placeholder {
     color: #000000;
